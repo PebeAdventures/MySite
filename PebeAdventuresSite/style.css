@@ -1,0 +1,61 @@
+body {
+    font-size: 13px;
+	 font-family: arial, helvetica, sans-serif;
+    color: black;
+	padding: 0;
+	background: #ccc url(resources/wall.png) no-repeat top;
+	
+}
+#navigation {
+    float: left;
+    width: 250px;
+}
+
+#navigation a {
+    display: block;
+    padding: 25px 15px;
+	border: 5px  #500;
+	
+}
+a:link {
+    color: blue;
+	background: url(resources/starDead2.gif) no-repeat right;
+	
+}
+}
+a:active {
+    color: red;
+}
+
+a:hover {
+    text-decoration: none;
+    color: blue;
+    background: url(resources/star2.gif) no-repeat right;
+
+
+}
+.footer {
+	   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+text-align: center;
+background: #ccc;
+}
+
+.content {
+    margin: 0px 250px;
+}
+
+.header {
+	  float: top;
+  height: 77px;
+			background:url(resources/logoBack.jpg);
+		}
+		
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
