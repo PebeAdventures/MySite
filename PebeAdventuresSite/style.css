@@ -15,24 +15,28 @@ body {
     display: block;
     padding: 25px 15px;
 	border: 5px  #500;
-	
+	color: black;
+	font-weight: bold;
+	font-variant: small-caps;
 }
 a:link {
-    color: blue;
+
+	text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
 	background: url(resources/starDead2.gif) no-repeat right;
-	
+		text-shadow: 4px 4px 10px rgba(66, 68, 90, 1);
+    text-decoration: none;
 }
-}
-a:active {
-    color: red;
-}
+
+
 
 a:hover {
+	border-radius: 25px 0px 0px 25px;
+	text-shadow: 4px 4px 10px rgba(66, 68, 90, 1);
     text-decoration: none;
-    color: blue;
     background: url(resources/star2.gif) no-repeat right;
+box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 
-
+ 
 }
 .footer {
 	   position: fixed;
@@ -50,7 +54,7 @@ background: #ccc;
 .header {
 	  float: top;
   height: 77px;
-			background:url(resources/logoBack.jpg);
+			-background:url(resources/logoBack.jpg);
 		}
 		
 .logo {
@@ -58,4 +62,33 @@ background: #ccc;
   margin-left: auto;
   margin-right: auto;
 
+}
+
+#contact{
+		      display: block;
+}
+#contact input[type=text]{
+	width: 402px;
+ margin: 8px 0;
+  display: block;
+}
+#contact input:focus{
+background: #eee;
+}
+#contact textarea:focus{
+	background: #eee;
+
+}
+input[type=submit] {
+   
+  width: 409px;
+  height: 35px;
+ margin: 8px 0;
+
+}
+#contact textarea{
+  width: 404px;
+ margin: 8px 0;
+  display: block;
+  resize: none;
 }
