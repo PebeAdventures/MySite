@@ -5,32 +5,57 @@
 <head>
 
     <title>Pebe Adventures</title>
- <link rel="stylesheet" href="style.css">
-
-
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts\main.js"></script>
 </head>
 
 <body>
- <header>
-<div id="navigation">
-    <ul>
-        <li><a href="index.html">O mnie</a></li>
-        <li><a href="PastAndFuture.html">Przeszłość i przyszłość</a></li>
-        <li><a href="Contact.html">Kontakt</a></li>
-    </ul>
-</div>
-</header>
 
-<div id="content">
-    <h1>Past past pasta</h1>
-<p>Pasta pasta pasta pasta </p>
-<p>Pasta pasta pasta pasta </p>
-<p>Pasta pasta pasta pasta </p>
- 
-	
-	
-</div>
+    <header>
 
+        <div class="header">
+            <img src="resources\logo.png" alt="logo" class="logo">
+
+        </div>
+    </header>
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">O mnie</a></li>
+            <li><a href="PastAndFuture.html">Przeszłość i przyszłość</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="content">
+        <h1>Contact me!</h1>
+        <p>Send me email with some wird jokes!</p>
+        <form id="contact">
+
+            <input type="text" id="fname" name="name" placeholder="Enter your name.." onkeyup='enableSubmit()' onmousedown='enableSubmit()' oninput='enableSubmit()' required>
+            <input type="text" id="femail" name="email" placeholder="Give your email.." onkeyup='enableSubmit()' onmousedown='enableSubmit()' oninput='enableSubmit()' required>
+
+<textarea rows="10" cols="53" id="ftextBox"placeholder="Write your sentence.." onkeyup='enableSubmit()' onmousedown='enableSubmit()' oninput='enableSubmit()' required></textarea>
+
+            <input id="myBtn" type="submit" disabled Value="SEND" onclick="return validation()">
+
+             
+
+        </form>
+       
+
+
+    </div>
+
+    <div class="footer">
+
+        <p>Author: Piotr Bujak</p>
+
+
+
+    </div>
+   
 </body>
 
 </html>
