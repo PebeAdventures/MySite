@@ -1,29 +1,29 @@
 
 function enableSubmit() {
-    var nameField = document.getElementById("fname");
-    var emailField = document.getElementById("femail");
-    var textBoxField = document.getElementById("ftextBox");
+    const nameField = document.getElementById("fname");
+    const emailField = document.getElementById("femail");
+    const textBoxField = document.getElementById("ftextBox");
     if (nameField.value.trim() != "" && emailField.value.trim() != "" && textBoxField.value.trim() != "") {
         document.getElementById("myBtn").disabled = false;
     } else { document.getElementById("myBtn").disabled = true; }
 }
 
 function nameValidation() {
-    var nameField = document.getElementById("fname");
+    const nameField = document.getElementById("fname");
   //ToDo letters{0,20} 
-    var regex = /^(\b[A-Z]\w*\s*)+$/;
+    const regex = /^(\b[A-Z]\w*\s*)+$/;
     return regex.test(nameField.value);
 }
 
 function emailValidation() {
-    var emailField = document.getElementById("femail");
-    var regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    const emailField = document.getElementById("femail");
+    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     return regex.test(emailField.value);
 }
 
 function validation() {
-    var nameState = true;
-    var emailState = true;
+    const nameState = true;
+    const emailState = true;
     if (nameValidation() != true) {
         alert("Name must containt only letters and space, and each word must start with capital letter and not longer then 20 letters.");
         nameState = false;
